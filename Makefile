@@ -26,7 +26,7 @@ OBJECTS= build/wrap.o build/sss.o
 PATH= /bin:/usr/bin:/usr/local/bin
 
 CFLAGS= -Wall -I./src -I$(LUA_INCLUDE) -g
-LIBS= -lm -L$(LUA_LIB) -llua -ldl `libgcrypt-config --libs`
+LIBS= -lm -L$(LUA_LIB) -llua -ldl
 
 #-----------------------------------------------------------------------
 all: dist/lsss.so dist/libluasss.a
