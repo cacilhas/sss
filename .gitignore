@@ -1,0 +1,10 @@
+*~
+*.a
+*.dylib
+*.kpf
+*.o
+*.so
+.*.swo
+.*.swp
+.env
+tmp
