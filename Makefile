@@ -1,13 +1,13 @@
 SHARED= -shared
 ARCH= x86_64
 
-#ifeq ($(shell uname) Darwin)
+ifeq ($(shell uname), Darwin)
 	CC= clang -c
 	LD= clang
-#else
+else
 	CC= gcc -c
 	LD= gcc
-#endif
+endif
 
 RM= rm -f
 AR= ar -r
